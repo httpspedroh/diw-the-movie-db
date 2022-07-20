@@ -1,0 +1,337 @@
+/* ------------------------------------------------------- Geral ------------------------------------------------------- */
+
+body {
+
+    background-color: #e1e2e3;
+    font-family: 'Jost', sans-serif;
+    min-height: 100vh;
+}
+
+main, footer { display: none; }
+
+a,
+a:visited,
+a:hover,
+a:active {
+
+    color: inherit;
+    text-decoration: none;
+}
+
+.sec_movie {
+
+    margin: 30px 15px;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.sec_movie h1 {
+
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.light_carbon { background-color: #585858; }
+.dark_carbon { background-color: #333333; }
+.white { color: white; }
+
+.general_title h1 {
+
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.general_movieImg {
+
+    width: 80%;
+    border-radius: 10px;
+}
+
+.general_button {
+
+    color: white !important;
+    margin-top: 20px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #333333;
+    font-weight: bold;
+}
+
+.general_button:nth-child(n + 2) { margin-left: 10px; }
+
+.general_button i { padding-right: 10px; }
+
+.general_button:hover {
+
+    border-color: #2fbccf;
+    background-color: #2fbccf;
+    color: white;
+}
+
+@media (max-width: 991px) {
+
+    .general_title h1 { text-align: center; }
+    .general_movieImg { width: 50% !important; }
+    .index_movieName, .detalhes_movieName { margin: 20px 0px 10px; }
+    hr { margin: 0px auto 50px auto !important; }
+
+}
+
+@media (max-width: 576px) {
+
+    .general_movieImg { width: 80% !important; }
+}
+
+textarea:focus,
+input[type="search"]:focus,
+.uneditable-input:focus {   
+
+    border-color: white;
+    box-shadow: none;
+    outline: 0 none;
+}
+
+.carousel-control-next, 
+.carousel-control-prev { width: 20px; }
+
+/*------------------------------------------------------- Header ------------------------------------------------------- */
+
+.header_logo img { 
+    max-width: 100%;
+    margin: 25px 30px; 
+}
+
+.menu_search { padding: 20px 0px; }
+
+/* ------------------------------------------------------- index.html ------------------------------------------------------- */
+
+.index_movieRow { margin-bottom: 80px; }
+.index_movieName { font-size: 30px; }
+
+.index_originalTitle {
+
+    font-weight: lighter;
+    font-size: 20px;
+}
+
+.index_overview {
+
+    margin-top: 30px;
+    text-align: justify;
+}
+
+/* ------------------------------------------------------- detalhes.html ------------------------------------------------------- */
+
+.detalhes_movieRow { padding: 30px; }
+
+.detalhes_movieName {
+
+    font-size: 25px;
+    font-weight: bolder;
+    color: white;
+}
+
+.detalhes_movieYear { font-weight: lighter; }
+
+.detalhes_movieInfo {
+
+    font-weight: lighter;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+.detalhes_movieCards {
+
+    font-size: 15px;
+    font-weight: lighter;
+    padding: 5px 10px;
+    background-color: #333333;
+    color: white;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.detalhes_movieCards i {
+
+    padding-right: 10px;
+    font-size: 10px;
+}
+
+.detalhes_movieOverview {
+
+    color: white;
+    padding-top: 30px;
+    text-align: justify;
+}
+
+@media (max-width: 416px) {
+
+    .detalhes_movieCards { display: inline-block; }
+    .detalhes_movieCards:last-child { margin-top: 10px; }
+}
+
+/* ------------------------------------------------------- pesquisa.html ------------------------------------------------------- */
+
+.pesquisa_movieName i { padding-right: 16px; }
+.pesquisa_movieYear { font-weight: lighter;}
+.pesquisa_movieOverview, .pesquisa_movieDate { 
+    text-align: justify; 
+    margin: 0px;
+}
+
+.pesquisa_movieDate {
+
+    margin-top: 10px;
+}
+
+.pesquisa_movieButton button {
+
+    background-color: #333333;
+    color: white;
+    font-weight: bold;
+    margin: 20px 0px 0px 0px;
+}
+
+.pesquisa_movieButton button:hover {
+    
+    background-color: #f8f9fa;
+    color: black;
+}
+
+.pesquisa_movieButton button i { padding-right: 8px; }
+
+@media (max-width: 575px) {
+
+    .pesquisa_movieName, .pesquisa_movieOverview, .pesquisa_movieDate, .pesquisa_movieButton button { font-size: 12px; }
+    .pesquisa_movieOverview { margin-top: 15px; }
+    .pesquisa_movieButton { 
+        
+        display: block;
+        text-align: center;
+    }
+}
+
+/* ------------------------------------------------------- Footer ------------------------------------------------------- */
+
+.footer {
+
+    padding: 15px;
+    margin-top: 30px;
+    background-color: #333333;
+    color: white;
+}
+
+.footer_row {
+
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.footer p {
+
+    margin: 0px;
+    text-align: center;
+}
+
+.footer img { max-width: 80%; }
+.footer a { text-align: right; }
+
+@media (max-width: 768px) {
+
+    .footer img {
+
+        padding-top: 20px;
+        max-width: 50%;
+    }
+
+    .footer a { text-align: center; }
+}
+
+/* ------------------------------------------------------- Menu mobile ------------------------------------------------------- */
+
+nav {
+    background: #333333;
+    height: 80px;
+    width: 100%;
+    position: top;
+    z-index: 999;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0px;
+}
+
+nav ul li a {
+    font-size: 17px;
+    padding: 13px 20px;
+    border-radius: 50px;
+}
+
+nav ul li a i {
+    padding-right: 10px;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 521px) {
+    label.logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    .checkbtn {
+        display: block;
+    }
+    nav {
+        position: fixed;
+        top: 0px;
+    }
+
+    main { margin-top: 110px; }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #00000065;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        padding: 10px 0px 0px 0px !important;
+    }
+    nav ul li {
+        display: block;
+        padding: 20px 0px;
+        line-height: 30px;
+    }
+    .header_loginBtn li {
+        padding-bottom: 30px;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    #check:checked~ul { left: 0; }
+    .menu_search { padding: 0px 30px; }
+}
